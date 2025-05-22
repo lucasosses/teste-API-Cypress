@@ -6,7 +6,7 @@ describe('Deve realizar o login com sucesso', () => {
       method: 'POST',
       url: '/login',
       body: {
-        email: "beltrano@qa.com.br",
+        email: "losses@qa.com.br",
         password: "teste"
       }
     }).should((response) => {
