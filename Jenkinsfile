@@ -23,6 +23,13 @@ pipeline {
             }
         }
 
+        stage('Subir servidor') {
+            steps { // Iniciar o servidor em background
+
+                bat 'start /b npm start'
+            }
+        }
+
         stage('Executar testes Cypress') {
             steps {
                 sh 'npx cypress run'
